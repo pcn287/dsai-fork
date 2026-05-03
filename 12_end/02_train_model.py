@@ -21,7 +21,7 @@ DATA_DIR = SCRIPT_DIR / "data"
 DB_PATH = SCRIPT_DIR / "data" / "traffic.db"
 MODEL_PATH = DATA_DIR / "modelpy.json"
 VALIDATION_PATH = DATA_DIR / "validationpy.json"
-METRO_ID = 948
+METRO_ID = "Brussels"
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -116,7 +116,7 @@ print(f"Testing R-squared: {test_r_squared:.3f}")
 model.save_model(str(MODEL_PATH))
 
 validation = {
-    "metro_id": int(METRO_ID),
+    "metro_id": METRO_ID,
     "test_rmse": float(test_rmse),
     "test_r_squared": float(test_r_squared),
     "train_rmse": float(train_rmse),
