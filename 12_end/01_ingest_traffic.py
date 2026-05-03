@@ -28,7 +28,7 @@ import requests
 # Brussels Traffic Vehicle Counts API documentation:
 # https://data.mobility.brussels/traffic/api/counts/
 BASE_URL = "https://data.mobility.brussels/traffic/api/counts/"
-BRUSSELS_METRO_ID = 948
+BRUSSELS_METRO_ID = "Brussels"
 SCRIPT_DIR = Path(__file__).resolve().parent
 DATA_DIR = SCRIPT_DIR / "data"
 DB_PATH = DATA_DIR / "traffic.db"
